@@ -19,6 +19,36 @@ h1 {
   font-weight: 500;
 }
 
+.bg-light {
+  background-color: #d4d5c3!important;
+}
+
+.navbar-brand {
+  color: var(--main-color)!important;
+  font-family: var(--heading-font-family);
+  font-size: 22px;
+  font-weight:500;
+}
+
+.navbar-toggler {
+  color: var(--additional-color)!important;
+}
+
+.nav-link {
+  color: var(--additional-color)!important;
+  font-family: var(--default-font-family);
+  font-weight: 600;
+}
+
+.nav-link.active {
+  color: var(--main-color)!important;
+}
+
+.nav-style {
+  background-color: var(--additional-color);
+  color: var(--secondary-color);
+}
+
 .hero {
   text-align: center;
   padding: 220px 20px;
@@ -129,5 +159,11 @@ h1 {
 
   .project-link:hover {
     text-decoration: none;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 992px) {
+  .container {
+    margin: 50px 10px;
   }
 }
