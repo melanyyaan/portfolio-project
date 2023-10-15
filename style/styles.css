@@ -4,13 +4,11 @@
   --additional-color: #4f0804c8;
   --heading-font-family: "Poppins", sans-serif;
   --default-font-family: "Raleway", sans-serif;
-  --box-shadow: 2px 5px 13px rgba(0, 0, 0, 0.4);
 }
 
 body {
   background-color: var(--secondary-color);
 }
-
 
 h1 {
   color: var(--main-color);
@@ -20,28 +18,28 @@ h1 {
 }
 
 .bg-light {
-  background-color: #d4d5c3!important;
+  background-color: #d4d5c3 !important;
 }
 
 .navbar-brand {
-  color: var(--main-color)!important;
+  color: var(--main-color) !important;
   font-family: var(--heading-font-family);
   font-size: 22px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .navbar-toggler {
-  color: var(--additional-color)!important;
+  color: var(--additional-color) !important;
 }
 
 .nav-link {
-  color: var(--additional-color)!important;
+  color: var(--additional-color) !important;
   font-family: var(--default-font-family);
   font-weight: 600;
 }
 
 .nav-link.active {
-  color: var(--main-color)!important;
+  color: var(--main-color) !important;
 }
 
 .nav-style {
@@ -51,7 +49,7 @@ h1 {
 
 .hero {
   text-align: center;
-  padding: 220px 20px;
+  padding: 220px 20px 120px;
 }
 
 .hero h2 {
@@ -76,12 +74,20 @@ h1 {
   font-family: var(--default-font-family);
   font-weight: 600;
   font-size: 18px;
-  box-shadow: var(--box-shadow);
+  box-shadow: 2px 5px 13px rgba(0, 0, 0, 0.4);
 }
 
 .btn-branding:hover {
   background-color: #4f0804eb;
   color: #fff;
+}
+
+.scroll-icon {
+  margin-top: 120px;
+}
+
+.scroll-icon i {
+  color: var(--main-color);
 }
 
 .subheading {
@@ -136,7 +142,7 @@ h1 {
   padding: 170px 80px;
 }
 
-.about-content p  {
+.about-content p {
   color: var(--main-color);
   font-family: var(--default-font-family);
   font-weight: 600;
@@ -148,17 +154,53 @@ h1 {
   max-width: 400px;
 }
 
+.contact-header {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: var(--heading-font-family);
+  color: var(--main-color);
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.contact-links i {
+  color: var(--main-color);
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: var(--main-color);
+}
+
+.contact-links p,
+a {
+  font-size: 22px;
+  color: var(--additional-color);
+  font-weight: 600;
+}
+
 @media (max-width: 992px) {
   h1 {
     font-size: 60px;
   }
 
   .hero {
-    padding: 170px 20px;
+    padding: 180px 20px 70px;
   }
 
   .hero h2 {
     font-size: 25px;
+  }
+
+  .scroll-icon i {
+    display: none;
   }
 
   .subheading {
@@ -194,13 +236,13 @@ h1 {
   }
 
   .container-about {
-  padding: 170px 30px;
-}
+    padding: 170px 30px;
+  }
 
-.about-content {
-  text-align: center;
-  margin-bottom: 70px;
-}
+  .about-content {
+    text-align: center;
+    margin-bottom: 70px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -217,5 +259,10 @@ h1 {
 
   .my-picture {
     max-width: 300px;
+  }
+
+  .contact-header {
+    margin-top: 130px;
+    font-size: 40px;
   }
 }
